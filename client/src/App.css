@@ -6,6 +6,25 @@
   height: 40vmin;
   pointer-events: none;
 }
+.ant-row css-dev-only-do-not-override-1rqnfsa {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 50px !important;
+}
+
+.recents-grid {
+  margin-top: 3.5rem;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: auto 50%;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

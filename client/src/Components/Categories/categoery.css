@@ -1,0 +1,33 @@
+.category-icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.category-icon {
+  background-color: white;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.table-commands {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.left-commands {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  color: white;
+}
+
+.right-commands {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  color: white;
+}

@@ -1,0 +1,15 @@
+h3 {
+  color: white;
+}
+
+.image-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
+}
+
+.home-tagline {
+  display: flex;
+  justify-content: center;
+  color: white;
+}

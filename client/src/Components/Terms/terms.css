@@ -1,0 +1,19 @@
+.terms-header {
+  display: flex;
+  justify-content: center;
+}
+
+.terms-header h1 {
+  color: white;
+}
+
+.terms-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 1rem;
+}
+
+.terms-content h3 {
+  color: black;
+  margin-left: 40px;
+}
