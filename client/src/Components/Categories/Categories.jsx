@@ -360,11 +360,7 @@ const Categories = () => {
         }}
       >
         <div className="category-icons">
-          <a
-            href="/FORM.pdf"
-            target="_blank"
-            style={{ color: "black" }}
-          >
+          <a href="/FORM.pdf" target="_blank" style={{ color: "black" }}>
             <PrinterOutlined className="category-icon" />
           </a>
           <ImportOutlined className="category-icon" />

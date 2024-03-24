@@ -14,7 +14,7 @@ const imageStyle = {
 
 const Home = () => {
   const {
-    token: { colorBgContainer, },
+    token: { colorBgContainer },
   } = theme.useToken();
 
   const history = useNavigate();
@@ -66,8 +66,6 @@ const Home = () => {
       <Content
         style={{
           padding: "24px 48px",
-          display: "flex",
-          justifyContent: "center",
         }}
       >
         <Carousel autoplay autoplaySpeed={5000}>
@@ -99,17 +97,17 @@ const Home = () => {
             for.
           </h1>
         </div>
-        <Row>
-          <div
-            className="image-row"
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "center",
-              gap: "20px",
-              marginTop: "3rem",
-            }}
-          >
+        <div
+          className="image-row"
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            gap: "20px",
+            marginTop: "3rem",
+          }}
+        >
+          <Row>
             <Col
               xs={{
                 flex: "100%",
@@ -313,25 +311,26 @@ const Home = () => {
                 />
               </div>
             </Col>
-          </div>
-        </Row>
-        <Row>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              marginTop: "30px",
-              marginBottom: "50px",
-              gap: "20px",
-            }}
-          >
+          </Row>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            marginTop: "30px",
+            marginBottom: "50px",
+            gap: "20px",
+          }}
+        >
+          <Row>
             <LeftOutlined style={{ color: "white" }} />
             <Button className="btn-grad" style={{ width: "400px" }}>
               Show More
             </Button>
             <RightOutlined style={{ color: "white" }} />
-          </div>
-        </Row>
+          </Row>
+        </div>
       </Content>
     </div>
   );
