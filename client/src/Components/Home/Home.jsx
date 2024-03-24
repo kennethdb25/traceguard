@@ -14,7 +14,7 @@ const imageStyle = {
 
 const Home = () => {
   const {
-    token: { colorBgContainer },
+    token: { colorBgContainer, },
   } = theme.useToken();
 
   const history = useNavigate();
@@ -66,6 +66,8 @@ const Home = () => {
       <Content
         style={{
           padding: "24px 48px",
+          display: "flex",
+          justifyContent: "center",
         }}
       >
         <Carousel autoplay autoplaySpeed={5000}>
