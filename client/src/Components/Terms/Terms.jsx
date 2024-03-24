@@ -1,12 +1,12 @@
 import React from "react";
 import "antd/dist/antd";
 import "./terms.css";
-import { Row, Col, Image, theme, Layout } from "antd";
+import { theme, Layout } from "antd";
 const { Content } = Layout;
 
 const Terms = () => {
   const {
-    token: { colorBgContainer, borderRadiusLG },
+    token: { colorBgContainer },
   } = theme.useToken();
   return (
     <div

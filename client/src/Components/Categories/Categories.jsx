@@ -40,11 +40,11 @@ import {
 const { Content } = Layout;
 const format = "HH:mm";
 
-const Categories = (props) => {
+const Categories = () => {
   const {
     token: { colorBgContainer },
   } = theme.useToken();
-  const {ValidLogin} = props;
+
   const [form] = Form.useForm();
 
   const [newCase, setNewCase] = useState(false);

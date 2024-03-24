@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import "antd/dist/antd";
 import "./home.css";
 import { Row, Col, Image, theme, Layout, Button } from "antd";
@@ -14,7 +14,7 @@ const imageStyle = {
 
 const Home = () => {
   const {
-    token: { colorBgContainer, borderRadiusLG },
+    token: { colorBgContainer },
   } = theme.useToken();
 
   const history = useNavigate();

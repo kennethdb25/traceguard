@@ -28,6 +28,7 @@ const History = () => {
 
   useEffect(() => {
     getUserLoginHistory();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const columns = [
