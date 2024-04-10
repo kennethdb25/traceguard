@@ -356,7 +356,7 @@ const Categories = () => {
     >
       <Content
         style={{
-          padding: "24px 48px",
+          padding: "24px 12px",
         }}
       >
         <div className="category-icons">

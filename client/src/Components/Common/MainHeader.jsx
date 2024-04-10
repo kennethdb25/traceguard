@@ -36,7 +36,7 @@ const items = item.map((nav, index) => ({
 }));
 
 const MainHeader = (props) => {
-  const { setData } = props;
+  const { setData, width } = props;
   const { userData, setUserData } = useContext(LoginContext);
   const [openProfile, setOpenProfile] = useState(false);
   const [openAddAccount, setOpenAddAccount] = useState(false);
@@ -46,7 +46,6 @@ const MainHeader = (props) => {
   }
   const history = useNavigate();
   const [form] = Form.useForm();
-  const width = window.innerWidth;
 
   const onSearch = (value, _e, info) => console.log(info?.source, value);
 
@@ -119,6 +118,8 @@ const MainHeader = (props) => {
     }
   };
 
+
+
   return (
     <>
       {userData ? (
@@ -146,6 +147,8 @@ const MainHeader = (props) => {
             />
             <Space direction="horizontal">
               <div style={{ display: "flex", gap: "30px" }}>
+                {width <= 450 ? null : (
+                  <>
                 <Search
                   placeholder="Search"
                   onSearch={onSearch}
@@ -153,6 +156,8 @@ const MainHeader = (props) => {
                     width: 200,
                   }}
                 />
+                  </>
+                )}
                 <BellFilled style={{ color: "white", cursor: "pointer" }} />
                 <UserOutlined
                   style={{ color: "white", cursor: "pointer" }}
